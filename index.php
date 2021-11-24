@@ -21,7 +21,7 @@
 <div class="nav">
 <a href="views/about us.php" class="nav__link">О компании</a>
 <a href="#" class="nav__link">Услуги</a>
-<a href="#" class="nav__link">Товари</a>
+<a href="views/product.php" class="nav__link">Товари</a>
 <a href="#" class="nav__link">Контакты</a>
 </div>
 </div>

@@ -32,9 +32,6 @@ form {
 input {
     margin: 10px 0;
     padding: 10px;
-    border: unset;
-    border-bottom: 2px solid #313131;
-    outline: none;
     background-color: #C4C4C4;
 }
 

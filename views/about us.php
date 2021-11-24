@@ -22,7 +22,7 @@ session_start();
             <div class="header_menu">
                 <a href="#" class="header_menu-item">О компании</a>
                 <a href="#" class="header_menu-item">Услуги</a>
-                <a href="#" class="header_menu-item">Товари</a>
+                <a href="product.php" class="header_menu-item">Товари</a>
                 <a href="#" class="header_menu-item">Контакты</a>
             </div>
             <div>
