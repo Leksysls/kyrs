@@ -16,10 +16,10 @@
 <img src="img/bg.png" alt="fon" class="main__bg-img">
 </div>
 <div class="main__content">
-<h1 class="logo">PIZDABOL</h1>
+<h1 class="logo">PZOL</h1>
 <h2>Готовые решения <br/> Для ваших ферм</h2>
 <div class="nav">
-<a href="#" class="nav__link">О компании</a>
+<a href="views/about us.php" class="nav__link">О компании</a>
 <a href="#" class="nav__link">Услуги</a>
 <a href="#" class="nav__link">Товари</a>
 <a href="#" class="nav__link">Контакты</a>

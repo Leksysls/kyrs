@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -5,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О компании</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -23,8 +26,15 @@
                 <a href="#" class="header_menu-item">Контакты</a>
             </div>
             <div>
+            <?php if(isset($_SESSION["user"])): ?>
                 <a href="#" class="header_menu-item">Корзина</a>
-                <a href="#" class="header_menu-item">Войти </a>
+                <?php endif; ?>
+                <?php if(isset($_SESSION["user"])): ?>
+                    <a href="../views/profile.php" class="header_menu-item">Личный кабинет </a>
+                    <?php else: ?> 
+                        <a href="../views/login.php" class="header_menu-item">Войти </a>
+                      <?php endif; ?>   
+                
                 </div>
         </div>
     </header>
@@ -100,7 +110,7 @@
     
                 <div class="job_we">
                         <div class="job_we_img">
-                            <img src="img/do.jpg" alt="kartinka o nas" class="job_we_img">
+                            <img src="../img/do.jpg" alt="kartinka o nas" class="job_we_img">
                         </div>
                         <div class="job_we_text_righ">
                             <h1>РАБОТАЕМ С 2014 ГОДА</h1>
