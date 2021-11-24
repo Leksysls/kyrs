@@ -35,7 +35,6 @@ input {
     border: unset;
     border-bottom: 2px solid #313131;
     outline: none;
-    border-radius: 20px;
     background-color: #C4C4C4;
 }
 
@@ -43,9 +42,6 @@ button {
     padding: 10px;
     background: #CA3E47;
     color: white;
-    border: unset;
-    cursor: pointer;
-    border-radius: 20px;
     width: 210px;
     height: 40px;
 }
@@ -66,5 +62,4 @@ button {
     height: 35vh;
     padding: 50px;
     background-color: #525252;
-    border-radius: 40px;
 }
