@@ -1,10 +1,5 @@
 <?php
 session_start();
-require_once('../vendor/connect.php');
-include '../vendor/main.php';
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -13,7 +8,7 @@ include '../vendor/main.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О компании</title>
-    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/kontakts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -76,56 +71,51 @@ include '../vendor/main.php';
                 
         </div>
     </header>
-    <main class="main_header_wrapper">
-    <div class="main_wrapper">
+    <main class="main_wrapper">
+        <div class="header_block">
+            <h1>КОНТАКТЫ <br> МОСКОВСКИЙ ОФИС</h1>
+        </div>
+        <div class="kontakt">
+             <div class="kontakts">
+            <h3>Адрес</h3>
+            <p>г. Москва, ул. Лётная, 99 ст3, офис 24</p>
+            <h3>Станция метро</h3>
+            <p>Spartak</p>
+            <h3>Электронная почта</h3>
+            <p>info@pzol.ru</p>
+            <h3>Телефон</h3>
+            <p>8 (800) 707-04-75</p>
+            <div class="footer_svg_media">
+                    <a href="https://vk.com/feed"><svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5182 0.880206C20.6643 0.372853 20.5182 0 19.8236 0H17.5262C16.9419 0 16.6727 0.322021 16.5268 0.677362C16.5268 0.677362 15.3583 3.64559 13.7033 5.57383C13.168 6.13201 12.9246 6.3098 12.6322 6.3098C12.4864 6.3098 12.275 6.13201 12.275 5.6249V0.880206C12.275 0.271431 12.1054 0 11.6186 0H8.00803C7.6431 0 7.4233 0.282619 7.4233 0.550645C7.4233 1.1278 8.25093 1.26109 8.33633 2.88481V6.41123C8.33633 7.18442 8.2024 7.325 7.91026 7.325C7.13163 7.325 5.23695 4.34314 4.11322 0.931282C3.89295 0.268026 3.67221 0.000243084 3.08515 0.000243084H0.787736C0.131134 -1.33615e-07 0 0.322021 0 0.677119C0 1.31143 0.778636 4.45746 3.62648 8.61819C5.52489 11.4595 8.1996 13 10.6337 13C12.0939 13 12.2748 12.6578 12.2748 12.0685V9.9211C12.2748 9.23669 12.4131 9.10024 12.8756 9.10024C13.2163 9.10024 13.8003 9.27755 15.1635 10.6476C16.7212 12.2713 16.9779 12.9998 17.8543 12.9998H20.1517C20.8078 12.9998 21.1361 12.6575 20.9469 11.9826C20.7395 11.3096 19.9958 10.3334 19.009 9.17637C18.4735 8.51676 17.6702 7.80632 17.4268 7.45098C17.0859 6.99446 17.1834 6.79162 17.4268 6.38544C17.427 6.38569 20.2263 2.27555 20.5182 0.880206Z" fill="white"/>
+                        </svg></a>
 
-    <div class="header_plugs">
-    <h1>Продукция</h1>
-    <div class="header_udner_plugs">
-    <a href="../views/product.php?sort=mosh-desc">Мощные</a>
-    <a href="../views/product.php?sort1=price-desc">Не дорогие</a>
-    </div>
-    
-    </div>
-     
-        <div class="violation_wrapper">
-                        
-            <?php foreach ($out as $row): ?>
-		<div class="violation">
-			<div class="violation_img-wrapper">	
-				<img src="<?= $row['cource_img_path'];?>" alt="product" class="violation_img">
-			</div>
 
-			<div class="violation_header">
-               <a href="../views/description_product.php?id=<?=$row['item_id'];?>"> <h3><?= $row['cource_name'];?></h3></a>
-            
-            <div class="violation_price">	
-                <h2><?= $row['price'];?>₽</h2>
+                <a href="https://www.instagram.com/"><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.99998 5.29504C6.6766 5.29504 5.59998 6.30438 5.59998 7.54504C5.59998 8.78571 6.6766 9.79504 7.99998 9.79504C9.32335 9.79504 10.4 8.78571 10.4 7.54504C10.4 6.30438 9.32335 5.29504 7.99998 5.29504Z" fill="white"/>
+                        <path d="M11.3276 0H4.67236C2.09191 0 0 1.96117 0 4.38033V10.6198C0 13.0388 2.09191 15 4.67236 15H11.3278C13.9081 15 16 13.0388 16 10.6197V4.38033C16 1.96117 13.9081 0 11.3276 0ZM8 11.4465C5.70524 11.4465 3.8384 9.69633 3.8384 7.54517C3.8384 5.39383 5.70524 3.64367 8 3.64367C10.2946 3.64367 12.1614 5.39383 12.1614 7.54517C12.1614 9.69633 10.2946 11.4465 8 11.4465ZM12.2528 3.65367C11.762 3.65367 11.3639 3.2805 11.3639 2.82033C11.3639 2.36017 11.762 1.987 12.2528 1.987C12.7436 1.987 13.1417 2.36017 13.1417 2.82033C13.1417 3.2805 12.7436 3.65367 12.2528 3.65367Z" fill="white"/>
+                        </svg></a>     
+
+                    <a href="https://web.telegram.org/"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7848 0.0925988L0.840381 5.79369C-0.248024 6.19855 -0.241424 6.76161 0.64198 7.01235L4.733 8.19653L6.14 12.4905C6.325 12.964 6.2338 13.1519 6.77021 13.1519C7.18401 13.1519 7.36681 12.9764 7.59781 12.7682L9.58602 10.9755L13.7222 13.8093C14.4834 14.1988 15.0328 13.997 15.2224 13.1541L17.9379 1.28864C18.2159 0.254878 17.5131 -0.213969 16.7848 0.0925988Z" fill="white"/>
+                        <path d="M6.78825 12.0104L5.43884 7.89241L15.8259 2.17834L8.15005 9.18638L6.78825 12.0104Z" fill="white"/>
+                        </svg></a> 
+
+
+                    <a href="https://www.facebook.com/"><svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.1977 16V8.71254H7.55868L7.92188 5.85938H5.1977V4.0425C5.1977 3.21903 5.41922 2.65743 6.55799 2.65743H8V0.113254C7.29793 0.0348537 6.59208 -0.00301295 5.88607 0.000187044C3.7939 0.000187044 2.36097 1.3193 2.36097 3.75983V5.85921H0V8.71236H2.36097V16H5.1977Z" fill="white"/>
+                        </svg></a> 
+
+
+             </div>
             </div>
-            
-                <a href="#" class="violation_click">Купить</a>
-            
-                
-			
-			</div>
-			
-			
-			
-			
-		</div>
-        <?php endforeach; ?>
-    </div>
-    
-    
-    
-
-
-
-	
-                
-    
+            <img src="../img/karta.png" alt="Karta">
+        </div>
+        
+        </div>
+       
     </main>
-<footer>
+    <footer>
     <div class="main_wrapper footer_text">
         <div class="footer_colummn">
             <h1 class="footer_h1"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -207,5 +197,4 @@ include '../vendor/main.php';
     
 </footer>    
 </body>
-
 </html>

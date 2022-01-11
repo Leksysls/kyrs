@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Roboto;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+body {
+  background-color: #424242;
+}
+.main_bg {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 780px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_menu h1 {
+  color: #fff;
+}
+.block_for_svg {
+  display: flex;
+}
+.block_for_svg_40 {
+  display: flex;
+  background-color: #dedede;
+  border-radius: 11px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.block_for_svg:not(:first-child) {
+  margin-left: 35px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+.nav a,
+span:not(:first-child) {
+  margin-left: 20px;
+}
+.tag_header {
+  margin-top: 210px;
+  color: #fff;
+}
+.button_header {
+  margin-top: 110px;
+}
+.button_header_item {
+  border-radius: 28px;
+  background-color: #d1525a;
+  padding: 15px 55px 15px 55px;
+}
+.button_header_item:not(:first-child) {
+  margin-left: 5px;
+  background-color: transparent;
+  width: 10px;
+}
+.text_main {
+  display: flex;
+  justify-content: space-between;
+}
+.bloks_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main_h1 {
+  color: #fff;
+  font-size: 36px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+.violation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 28px;
+  width: 220px;
+  height: 220px;
+  background-color: #fff;
+}
+.violation:not(:first-child) {
+  margin-left: 39px;
+}
+.violation p {
+  color: #424242;
+  font-size: 16px;
+}
+.text2_main {
+  color: #fff;
+  font-size: 20px;
+}
+
+.works_main {
+  color: #fff;
+}
+
+.works_main h1 {
+  font-size: 36px;
+}
+.works_main p {
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+.achievements {
+  display: flex;
+  margin-bottom: 100px;
+}
+.achievement_item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 180px;
+  border-radius: 28px;
+  background-color: #cf424b;
+  align-items: center;
+  justify-content: center;
+}
+.achievement_item:not(:first-child) {
+  margin-left: 20px;
+}
+.achievement_item h2 {
+  color: #fff;
+  font-size: 56px;
+}
+.achievement_item p {
+  color: #dedede;
+  font-size: 24px;
+}
+.job_we_img {
+  width: 377px;
+  height: 342px;
+  position: relative;
+}
+
+.job_we_text_righ {
+  padding-left: 23px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.job_we_text_righ p {
+  color: #dddddd;
+  padding-top: 20px;
+  font-size: 18px;
+}
+.job_we_text_righ a {
+  width: 220px;
+  height: 60px;
+  background-color: #ca3e47;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.job_we {
+  display: flex;
+  padding-bottom: 278px;
+}
+/* footer */
+footer {
+  background-color: #696969;
+  padding: 40px 0;
+}
+.gray {
+  color: #fff;
+}
+.footer_colummn {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-bottom: 30px;
+}
+
+.footer_h1 {
+  display: block;
+  color: #fff;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.footer_text {
+  display: flex;
+}
+.footer_colummn_text {
+  color: white;
+  justify-content: center;
+  font-size: 14;
+}
+.footer_colummn_text h3 {
+  margin-bottom: 20px;
+}
+
+.footer_svg_media {
+  display: inline;
+  width: 35px;
+  height: 20px;
+}
+
+.footer_svg_media :not(:first-child) {
+  margin-left: 20px;
+}
+.footer_border {
+  background-color: #313131;
+  height: 1px;
+}
+.pzol {
+  color: #999999;
+  margin-top: 10px;
+}
+
+.footer_btn {
+  background-color: #d1525a;
+  color: #fff;
+  border-radius: 17px;
+  width: 240px;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.footer_colummns h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.column_text {
+  color: #fff;
+}
+
+.column_text :first-child {
+  margin-top: 30px;
+}
+
+.column_text :not(:first-child) {
+  margin-top: 10px;
+}
+.footer_colummns {
+  display: flex;
+  flex-direction: column;
+}
+.footer_colummns:not(:first-child) {
+  margin-left: 100px;
+}
+.footer_wrapper_columns {
+  display: flex;
+  justify-content: space-between;
+}

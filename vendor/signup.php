@@ -9,7 +9,13 @@
 
 
     $check_login = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$login'");
-    if (mysqli_num_rows($check_login) > 0) {
+    if(!$login){
+        $_SESSION['message'] = 'Логин не может быть пустым';
+        header('Location: ../views/register.php');
+        
+        exit();
+    }
+    elseif (mysqli_num_rows($check_login) > 0) {
         $_SESSION['message'] = 'Такой логин уже существует';
         header('Location: ../views/register.php');
         exit();

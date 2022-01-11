@@ -1,5 +1,4 @@
 <?php
-
     session_start();
     require_once 'connect.php';
 
@@ -11,11 +10,15 @@
 
         $user = mysqli_fetch_assoc($check_user);
 
+        $_SESSION['role_id']=$user["role_id"];
+        
         $_SESSION['user'] = [
             "id" => $user['id'],
-        ];
+            "login" => $user['login'],
+            "role_id" => $user['role_id']
 
-        header('Location: ../index.php');
+        ];
+        header('Location: ../views/product.php');
 
     } else {
         $_SESSION['message'] = 'Не верный логин или пароль';
@@ -23,9 +26,3 @@
     }
     ?>
 
-<pre>
-    <?php
-    print_r($check_user);
-    print_r($user);
-    ?>
-</pre>

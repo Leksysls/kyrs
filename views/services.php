@@ -1,10 +1,5 @@
 <?php
 session_start();
-require_once('../vendor/connect.php');
-include '../vendor/main.php';
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,15 +7,14 @@ include '../vendor/main.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О компании</title>
-    <link rel="stylesheet" href="../css/product.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Услуги</title>
 </head>
-
 <body>
-    <header class="header_about"> 
+<header class="header_about"> 
         <div class="main_wrapper header_wrapper">
             <div class="header_logo"><a href="../index.php"><h1>PZOL</h1></a></div>
             
@@ -76,56 +70,38 @@ include '../vendor/main.php';
                 
         </div>
     </header>
-    <main class="main_header_wrapper">
-    <div class="main_wrapper">
-
-    <div class="header_plugs">
-    <h1>Продукция</h1>
-    <div class="header_udner_plugs">
-    <a href="../views/product.php?sort=mosh-desc">Мощные</a>
-    <a href="../views/product.php?sort1=price-desc">Не дорогие</a>
-    </div>
-    
-    </div>
-     
-        <div class="violation_wrapper">
-                        
-            <?php foreach ($out as $row): ?>
-		<div class="violation">
-			<div class="violation_img-wrapper">	
-				<img src="<?= $row['cource_img_path'];?>" alt="product" class="violation_img">
+    <main class="main_wrapper ">
+        <h1 class="head_h1">УСЛУГИ</h1>
+    <div class="violation_wrapper">
+        <div class="violation">
+            <div class="violation_img-wrapper">	
+				<img src="../img/service1.jpg" alt="service" class="violation_img">
 			</div>
-
-			<div class="violation_header">
-               <a href="../views/description_product.php?id=<?=$row['item_id'];?>"> <h3><?= $row['cource_name'];?></h3></a>
-            
-            <div class="violation_price">	
-                <h2><?= $row['price'];?>₽</h2>
+            <div class="violation_header">
+                <p>Выполняем ремонт ASIC-майнеров любой сложности по мануалам Bitmain Antminer.</p>
             </div>
             
-                <a href="#" class="violation_click">Купить</a>
-            
-                
-			
+        </div>  
+        <div class="violation">
+            <div class="violation_img-wrapper">	
+				<img src="../img/service3.jpg" alt="service" class="violation_img">
 			</div>
-			
-			
-			
-			
-		</div>
-        <?php endforeach; ?>
+            <div class="violation_header">
+                <p>Переоборудуем 40-футовые контейнеры: оснащаем видеонаблюдением, системами охлаждения и пожаротушения</p>
+            </div>
+            
+        </div>  
+        <div class="violation">
+            <div class="violation_img-wrapper">	
+				<img src="../img/service2.jpg" alt="service" class="violation_img">
+			</div>
+            <div class="violation_header">
+                <p>Если вам не хватает площади для размещения майнеров, предлагаем воспользоваться нашей услугой.</p>
+            </div>
+        </div>  
     </div>
-    
-    
-    
-
-
-
-	
-                
-    
     </main>
-<footer>
+    <footer>
     <div class="main_wrapper footer_text">
         <div class="footer_colummn">
             <h1 class="footer_h1"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,7 +181,6 @@ include '../vendor/main.php';
         </div>
         
     
-</footer>    
+</footer>  
 </body>
-
 </html>
